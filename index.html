@@ -28,10 +28,16 @@
         email:<input name="email"><br>
 
     </form> -->
-
+<!-- 
     <form name="myForm" action="demo_asp" onsubmit="return validateForm() " method="post">
         first name:<input type="text" name="fname">
         <input type="submit" value="submit">
+    </form> -->
+
+    <form  onclick="return validateForm_email()" method="post">
+        <label for="Email">Email</label>
+        <input type="email" id="email" name="email" required>
+        <input type="submit">
     </form>
     <script src="script.js"></script>
 </body>

@@ -175,10 +175,37 @@
 // document.write("you will be redirected to main page in 10 sec");
 // setTimeout('Redirect()',10000);
 
-function validateForm(){
-  var x=document.forms["myForm"]["fname"].value;
-  if(x==null || x==""){
-    alert("first name must be filled out");
-    return false;
-  }
+// function validateForm(){
+//   var x=document.forms["myForm"]["fname"].value;
+//   if(x==null || x==""){
+//     alert("first name must be filled out");
+//     return false;
+//   }
+// }
+
+// function validateForm(){
+//   var y=documentforms["myform"]["call"]value;
+
+//   ifylength!=10){
+//     alert("enter the 10 digit mobile number");
+//     return false;
+//   }
+//   ifymatch(/^[0-9][10]$//)){
+//   alert("only digit enter please");
+//   return false;
+//   }
+// }
+
+function validateForm_email(){
+  var x=document.forms["myForm"]["email"].value;
+  var atpos=x.indexOf("@");
+  var dotpos=x.lastIndexOf(".")
+  if(atpos<1 || dotpos<atpos+2 || dotpos+2>=
+      x.length){
+          alert("Not a valid e-mail address");
+          return false;
+      }
+  
 }
+
+   
